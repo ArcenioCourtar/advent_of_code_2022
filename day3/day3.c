@@ -7,7 +7,7 @@ int rucksack_size(char *buf_part)
 {
 	int i = 0;
 
-	while (buf_part[i] != '\n')
+	while (buf_part[i] != '\n' && buf_part[i] != '\0')
 		i++;
 	return (i);
 }
@@ -53,7 +53,7 @@ int compare_contents_p2(char* buf, int *i)
 
 	while (bag < 4)
 	{
-		if (buf[*i] == '\n')
+		if (buf[*i] == '\n' || buf[*i] == '\0')
 			bag++;
 		else if (buf[*i] >= 'a' && buf[*i] <= 'z')
 		{
