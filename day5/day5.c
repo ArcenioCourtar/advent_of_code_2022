@@ -118,8 +118,8 @@ int	main(void)
 {
 	int fd = open("input.txt", O_RDONLY);
 	char buf[BUFFER_SIZE+1];
-	char stacks1[9][60];
-	char stacks2[9][60];
+	char stacks1[9][60] = {0};
+	char stacks2[9][60] = {0};
 	int i = 0;
 	
 	read(fd, buf, BUFFER_SIZE);
