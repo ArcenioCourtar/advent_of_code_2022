@@ -1,11 +1,13 @@
 # PLEASE READ BEFORE RUNNING
+# IMPORTANT: the initial "cd /" command from the input is removed
+# and replaced with "mkdir output" "cd output".
 # I used regex to modify the input file, and make an actual shell script that
 # generates all the necessary directories and files.
-# All the generated folders and files get placed into an "output" folder.
+# All the generated folders and files get placed into an "output" 
+# which is created in the folder you run the sript in.
 # The files total at around 40MB of storage
 # (These files are "sparse" files. They have metadata that represents their size
-#  without actually writing that amount of memory on the hard drive).
-# Sadly I still don't have a way to easily parse the size of the contents of each folder.
+#  without actually writing that amount of memory on the hard drive upon creation).
 mkdir output
 cd output
 mkdir fwbjchs
