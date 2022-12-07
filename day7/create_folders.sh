@@ -1,6 +1,7 @@
 # PLEASE READ BEFORE RUNNING
 # IMPORTANT: the initial "cd /" command from the input is removed
 # and replaced with "mkdir output" "cd output".
+# All instance of "ls" have also been removed
 # I used regex to modify the input file, and make an actual shell script that
 # generates all the necessary directories and files.
 # All the generated folders and files get placed into an "output" 
